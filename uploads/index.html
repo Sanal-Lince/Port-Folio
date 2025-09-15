@@ -52,7 +52,8 @@
           <em>Image files (JPG/PNG) are blocked.</em>
         </p>
 
-        <form id="uploadForm" action="#" method="POST" enctype="multipart/form-data" novalidate>
+       <form id="uploadForm" name="upload-form" method="POST" data-netlify="true" enctype="multipart/form-data" novalidate>
+          <input type="hidden" name="form-name" value="upload-form" />
           <div class="form-row">
             <div class="form-group col-md-4">
               <label for="fullName">Name</label>
